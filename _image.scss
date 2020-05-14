@@ -1,0 +1,41 @@
+/* Image component prototype */
+div.image, a.image {
+	display: block;
+	margin-bottom: $element-margin;
+
+	img, canvas {
+		border-radius: $border-radius;
+		display: block;
+		max-width: 100%;
+	}
+
+	&.image--fit {
+
+		img, canvas {
+			width: 100%;
+		}
+	}
+
+	&.image--center {
+
+		img, canvas {
+			margin: 0 auto;
+		}
+	}
+
+	&.image--left {
+		float: left;
+		margin: 0.25rem ($grid-gutter / 2) 0 0;
+		max-width: 40%;
+	}
+
+	&.image--right {
+		float: right;
+		margin: 0.25rem 0 0 ($grid-gutter / 2);
+		max-width: 40%;
+	}
+}
+
+/* Image component extensions */
+div.image, a.image {
+}
