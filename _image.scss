@@ -6,7 +6,9 @@ div.image, a.image {
 	img, canvas {
 		border-radius: $border-radius;
 		display: block;
+		height: auto;
 		max-width: 100%;
+		width: auto;
 	}
 
 	&.image--fit {
